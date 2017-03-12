@@ -1,0 +1,11 @@
+{
+  "pluginid": "gardenstuff",
+  "archivebase": "com.jeffpeng.jmod.gardenstuff",
+  "name": "JMOD GardenStuff",
+  "description" : "",
+  "version"	:	"1.3.1",
+  "authors"	: [],
+  "url" : "",
+  "credits" : "",
+  "scriptingobjects" : {"GardenStuff":"Scripting"}
+}
