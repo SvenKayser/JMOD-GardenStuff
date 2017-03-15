@@ -17,7 +17,8 @@ public class GardenAPI
     public static IGardenAPI instance () {
         if (instance == null) {
             try {
-                Class classAPI = Class.forName("com.jaquadro.minecraft.gardenapi.internal.Api");
+                @SuppressWarnings("rawtypes")
+				Class classAPI = Class.forName("com.jaquadro.minecraft.gardenapi.internal.Api");
                 instance = (IGardenAPI) classAPI.getField("instance").get(null);
             }
             catch (Throwable t) {

@@ -2,6 +2,7 @@ package com.jaquadro.minecraft.gardenapi.api.machine;
 
 import net.minecraft.item.ItemStack;
 
+@SuppressWarnings("rawtypes")
 public interface ICompostRegistry
 {
     void registerCompostMaterial (String modId, String itemId, int meta, ICompostMaterial materialInfo);
@@ -17,8 +18,8 @@ public interface ICompostRegistry
     void removeCompostMaterial (ItemStack itemStack);
 
     void removeCompostMaterial (String oreDictionaryKey);
-
-    void removeCompostMaterial (Class clazz);
+    
+	void removeCompostMaterial (Class clazz);
 
     void clear ();
 
